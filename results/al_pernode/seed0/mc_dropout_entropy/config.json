@@ -1,0 +1,32 @@
+{
+ "out": "results/al_pernode/seed0/mc_dropout_entropy",
+ "method": "mc_dropout",
+ "acquisition": "entropy",
+ "data": "data/processed/elliptic_local.pt",
+ "seed": 0,
+ "threads": 8,
+ "batch": 2000,
+ "max_iters": 0,
+ "T_dropout": 50,
+ "T_aa": 10,
+ "eps_max": 0.1,
+ "model": "model0",
+ "K": 3,
+ "hidden": 50,
+ "dropout": 0.7,
+ "epochs": 50,
+ "lr": 0.001,
+ "lstm_mode": "per_node",
+ "output": "log_softmax",
+ "edges": "directed",
+ "train_last_t": 34,
+ "standardize": "none",
+ "weight_decay": 0.0,
+ "class_weights": "none",
+ "layers": [
+  "lstm",
+  "tag",
+  "tag"
+ ],
+ "pool_size": 29894
+}

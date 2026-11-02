@@ -1,0 +1,28 @@
+{
+ "out": "results/ablation_pernode/model5_seed1",
+ "data": "data/processed/elliptic_local.pt",
+ "seed": 1,
+ "threads": 8,
+ "model": "model5",
+ "K": 3,
+ "hidden": 50,
+ "dropout": 0.7,
+ "epochs": 50,
+ "lr": 0.001,
+ "lstm_mode": "per_node",
+ "output": "log_softmax",
+ "edges": "directed",
+ "train_last_t": 34,
+ "standardize": "none",
+ "weight_decay": 0.0,
+ "class_weights": "none",
+ "eval_every": 10,
+ "force": false,
+ "layers": [
+  "linear",
+  "linear",
+  "linear"
+ ],
+ "n_train_labelled": 29894,
+ "n_test_labelled": 16670
+}
